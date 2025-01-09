@@ -1,0 +1,107 @@
+.footer {
+  margin-top: 5rem;
+}
+.footer__cta {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  background-color: #e7816b;
+  border-radius: 15px;
+  padding: 7.2rem 9.5rem;
+  background-image: url(../../images/home/desktop/bg-pattern-hero-home.svg);
+  background-size: 292px;
+  background-position: center 141px;
+  margin-bottom: -9rem;
+}
+.footer__cta__container {
+  color: #ffffff;
+  margin-right: auto;
+}
+.footer__cta__container__title {
+  @include font-style(40px, 40px, 500);
+  margin-bottom: 1.8rem;
+}
+.footer__cta__container__text {
+  @include font-style(16px, 26px, 400);
+}
+.footer__btn {
+  border-radius: 8px;
+  padding: 1.7rem 1.8rem;
+  background-color: #ffffff;
+  color: #333136;
+  @include font-style(15px, 21.5px, 500, 1px);
+}
+.footer__btn:active {
+  background-color: #ffad9b;
+}
+
+@media screen and (max-width: 850px) {
+  .footer {
+    justify-content: center;
+    padding-left: 3.9rem;
+    padding-right: 3.9rem;
+    margin-top: 6.7rem;
+  }
+  .footer__cta {
+    display: flex;
+    flex-direction: column;
+    padding: 5.7rem 5.8rem;
+    text-align: center;
+    gap: 3.2rem;
+  }
+}
+
+.footer__info {
+  background-color: #1d1c1e;
+  padding-top: 7.2rem;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 7.2rem;
+}
+.footer__info__container {
+  margin-top: 7.2rem;
+  padding: 0;
+}
+.footer__divider {
+  opacity: 0.1;
+  border: 2px solid #ffffff;
+  margin-bottom: 3.1rem;
+}
+.footer__link {
+  color: #ffffff;
+}
+.footer__info__item {
+  text-align: left;
+  text-decoration: none;
+  padding-right: 15rem;
+}
+
+.footer__info__list {
+  flex-direction: column;
+  @include font-style(16px, 26px, 700);
+  opacity: 0.5;
+  display: flex;
+  color: #ffffff;
+}
+.footer__info__link {
+  color: #ffffff;
+  @include font-style(16px, 26px, 400);
+}
+.socials__list {
+  display: flex;
+  margin-left: auto;
+  gap: 1.6rem;
+}
+.socials__list:hover {
+  opacity: 0.6;
+}
+.socials__link {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 850px) {
+  .footer__info {
+    padding: 8rem 3.9rem;
+  }
+}

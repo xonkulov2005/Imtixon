@@ -1,0 +1,52 @@
+// Typography Mixins
+@mixin font-style(
+  $size,
+  $line-height,
+  $weight: normal,
+  $letter-spacing: normal
+) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+  letter-spacing: $letter-spacing;
+}
+
+// Heading Styles
+@mixin heading-h1 {
+  @include font-style(48px, 48px, 500); // H1: Medium weight, no letter-spacing
+}
+
+@mixin heading-h2 {
+  @include font-style(
+    40px,
+    48px,
+    500,
+    2px
+  ); // H2: Medium weight, +2px letter-spacing
+}
+
+@mixin heading-h3 {
+  @include font-style(
+    20px,
+    26px,
+    500,
+    5px
+  ); // H3: Medium weight, +5px letter-spacing
+}
+
+@mixin heading-h4 {
+  @include font-style(14px, 14px, 400, 2px);
+}
+
+@mixin heading-h5 {
+  @include font-style(15px, 21.5px, 500, 1px);
+}
+
+@mixin heading-h6 {
+  @include font-style(40px, 40px, 500);
+}
+
+// Body Text Styles
+@mixin body-text {
+  @include font-style(16px, 26px, 400); // Regular body text
+}

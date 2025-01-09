@@ -1,0 +1,93 @@
+.sitenav {
+  display: flex;
+  align-items: center;
+  padding: 6.5rem 0 6.4rem 0;
+}
+
+.sitenav__list {
+  margin-left: auto;
+}
+.sitenav__link {
+  text-decoration: none;
+  @include font-style(14px, 14px, 400, 2px);
+  color: #333136;
+}
+.sitenav__link:not(:last-child) {
+  margin-right: 4.2rem;
+}
+.header__hero {
+  padding-top: 14.5rem;
+  padding-bottom: 14.5rem;
+  padding-left: 9.5rem;
+  background-color: #e7816b;
+  border-radius: 15px;
+  color: #ffffff;
+  background-image: url(../../images/home/desktop/bg-pattern-hero-home.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  display: flex;
+  position: relative;
+}
+
+.header__hero__container {
+  max-width: 54rem;
+  width: 100%;
+}
+.header__hero__title {
+  @include font-style(48px, 48px, 500);
+  margin-top: 0;
+}
+.header__hero__text {
+  @include font-style(16px, 26px);
+  margin-bottom: 4rem;
+}
+
+.header__hero__btn {
+  background-color: #ffffff;
+  color: #333136;
+  @include font-style(15px, 21.5px, 500, 1px);
+}
+
+.header__hero__btn:active {
+  background-color: #ffad9b !important;
+  color: #ffffff;
+}
+
+.phone-img {
+  position: absolute;
+  content: "";
+  top: -4rem;
+  right: 3rem;
+  width: 380px;
+  height: 900px;
+}
+
+@media screen and (max-width: 850px) {
+  .header__hero {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 6rem 5.8rem 7rem 5.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sitenav {
+    align-items: center;
+    padding: 3.5rem 0 3.4rem 0;
+  }
+  .sitenav__link {
+    visibility: hidden;
+  }
+  .header__hero {
+    padding: 8rem 2.4rem 8rem 2.4rem;
+  }
+  .header__hero__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  .header__hero__text {
+    @include font-style(16px, 26px, 400);
+  }
+}
