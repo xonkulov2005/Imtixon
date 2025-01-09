@@ -1,0 +1,33 @@
+.web-header__hero {
+  background-color: #e7816b;
+  border-radius: 15px;
+  padding: 6.4rem 19rem;
+  background-image: url(../../images/home/desktop/bg-pattern-hero-home.svg);
+  background-size: 292px;
+  background-position: center 141px;
+}
+.web-header__hero__container {
+  text-align: center;
+  color: #ffffff;
+}
+
+.web__hero__container {
+  margin-top: 16rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  column-gap: 3rem;
+  row-gap: 3.2rem;
+}
+.web__hero__items {
+}
+.web__hero__items:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.web-design__img {
+}
+.web__hero__title {
+}
+.web__hero__text {
+}

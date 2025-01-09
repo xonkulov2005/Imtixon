@@ -26,7 +26,6 @@
   background-repeat: no-repeat;
   background-position: right top;
   display: flex;
-  position: relative;
 }
 
 .header__hero__container {
@@ -54,12 +53,9 @@
 }
 
 .phone-img {
-  position: absolute;
-  content: "";
-  top: -4rem;
-  right: 3rem;
-  width: 380px;
-  height: 900px;
+  margin-top: -7rem;
+  min-width: 284px;
+  min-height: 573px;
 }
 
 @media screen and (max-width: 850px) {
@@ -67,7 +63,7 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    padding: 6rem 5.8rem 7rem 5.8rem;
+    padding: 6rem 5.8rem 0 5.8rem;
   }
 }
 
