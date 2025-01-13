@@ -39,16 +39,43 @@
 @media screen and (max-width: 850px) {
   .footer {
     justify-content: center;
+    margin-top: 6.7rem;
+  }
+  .footer__inner {
     padding-left: 3.9rem;
     padding-right: 3.9rem;
-    margin-top: 6.7rem;
   }
   .footer__cta {
     display: flex;
     flex-direction: column;
-    padding: 5.7rem 5.8rem;
     text-align: center;
     gap: 3.2rem;
+  }
+  .footer__cta__container {
+    padding: 5.7rem 5.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer__inner {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .footer__cta {
+    padding: 6.4rem 2.4rem;
+  }
+  .footer__cta__container__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  .footer__cta__container__text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .footer__cta__container {
+    padding: 0;
   }
 }
 
