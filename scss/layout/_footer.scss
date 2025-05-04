@@ -15,7 +15,7 @@
   margin-bottom: -9rem;
 }
 .footer__cta__container {
-  color: #ffffff;
+  color: $color-white;
   margin-right: auto;
 }
 .footer__cta__container__title {
@@ -92,14 +92,13 @@
 }
 .footer__divider {
   opacity: 0.1;
-  border: 2px solid #ffffff;
+  border: 2px solid $color-white;
   margin-bottom: 3.1rem;
 }
 .footer__link {
-  color: #ffffff;
+  color: $color-white;
 }
 .footer__info__item {
-  text-align: left;
   text-decoration: none;
   padding-right: 15rem;
 }
@@ -109,10 +108,10 @@
   @include font-style(16px, 26px, 700);
   opacity: 0.5;
   display: flex;
-  color: #ffffff;
+  color: $color-white;
 }
 .footer__info__link {
-  color: #ffffff;
+  color: $color-white;
   @include font-style(16px, 26px, 400);
 }
 .socials__list {
@@ -139,19 +138,19 @@
   .sitenav {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .footer__info__item {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin: 4rem auto;
   }
   .socials {
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
